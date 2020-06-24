@@ -14,7 +14,7 @@ namespace ElevenNote.WebMVC.Controllers
         public ActionResult Index()
         {
             var model = new NoteLIstItem[0];
-            return View();
+            return View(model);
         }
     }
 }
