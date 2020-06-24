@@ -22,7 +22,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    @if (User.Identity.IsAuthenticated) <!--This requires user to be logged in to see the Notes option in brackets -->
+                    @if (User.Identity.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("Notes", "Index", "Note")</li>
                     }
